@@ -1,10 +1,12 @@
-import pathlib
 import csv
-from typing import Iterator, Any
-import json
 import datetime
-from dateutil.parser import parse
+import json
+import pathlib
 import re
+from typing import Any, Iterator
+
+from dateutil.parser import parse
+
 from app.configs.config import SCHEMA_COL_NAMES, SUPPORTED_FILE_TYPES
 
 

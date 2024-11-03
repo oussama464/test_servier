@@ -1,8 +1,9 @@
-from pydantic import BaseModel, AfterValidator, BeforeValidator
-from typing import Annotated
 import datetime
-from app.utils.utils import parse_date, clean_string
+from typing import Annotated
 
+from pydantic import AfterValidator, BaseModel, BeforeValidator
+
+from app.utils.utils import clean_string, parse_date
 
 Date = Annotated[datetime.date, BeforeValidator(parse_date)]
 CuratedStr = Annotated[str, AfterValidator(clean_string)]

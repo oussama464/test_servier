@@ -1,14 +1,10 @@
-import pytest
-import datetime
-import json
 import csv
-import tempfile
+import datetime
+
 from app.configs.config import SCHEMA_COL_NAMES
-from app.main import get_modeled_data, get_referential_drugs, consolidate_data
-from pydantic import ValidationError
+from app.main import consolidate_data, get_modeled_data, get_referential_drugs
 from app.models.drugs import Drugs
 from app.models.pubmed_trials import PubTrial
-from app.models.referenced_drugs import ReferencedDrugs
 
 
 def test_get_modeled_data(tmp_path):

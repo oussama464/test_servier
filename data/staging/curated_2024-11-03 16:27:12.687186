@@ -7,7 +7,7 @@
         "journal": "Journal of emergency nursing",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -18,7 +18,7 @@
         "journal": "Journal of emergency nursing",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -29,7 +29,7 @@
         "journal": "Journal of emergency nursing",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -40,7 +40,7 @@
         "journal": "Journal of emergency nursing",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -51,7 +51,7 @@
         "journal": "Journal of emergency nursing",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -62,7 +62,7 @@
         "journal": "The Journal of pediatrics",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -73,7 +73,7 @@
         "journal": "Journal of food protection",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -84,7 +84,7 @@
         "journal": "American journal of veterinary research",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -95,7 +95,7 @@
         "journal": "Psychopharmacology",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -106,7 +106,7 @@
         "journal": "Psychopharmacology",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -117,7 +117,7 @@
         "journal": "The journal of maternal-fetal & neonatal medicine",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -128,7 +128,7 @@
         "journal": "Journal of emergency nursing",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -139,7 +139,7 @@
         "journal": "The journal of allergy and clinical immunology. In practice",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -150,7 +150,7 @@
         "journal": "The journal of allergy and clinical immunology. In practice",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -161,7 +161,7 @@
         "journal": "Journal of photochemistry and photobiology. B, Biology",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -172,7 +172,7 @@
         "journal": "The journal of maternal-fetal & neonatal medicine",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -183,7 +183,7 @@
         "journal": "Journal of back and musculoskeletal rehabilitation",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -194,7 +194,7 @@
         "journal": "The journal of maternal-fetal & neonatal medicine",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -205,7 +205,7 @@
         "journal": "Hpitaux Universitaires de Genve",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "ingestion_timestamp": "2024-11-03 16:27:12.684554",
         "pipeline_owner": "ouss@gmail.com"
     }
 ]

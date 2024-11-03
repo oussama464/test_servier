@@ -1,11 +1,6 @@
 import pytest
-import tempfile
-import datetime
-import pathlib
-import json
-import csv
-from typing import Iterator
 from pydantic import ValidationError
+
 from app.models.drugs import Drugs
 from app.models.pubmed_trials import PubTrial
 from app.models.referenced_drugs import ReferencedDrugs
@@ -155,36 +150,3 @@ def test_referenceddrugs_model_valid(input_data):
 def test_referenceddrugs_model_invalid(input_data):
     with pytest.raises(ValidationError):
         ReferencedDrugs(**input_data)
-
-
-def test_get_modeled_data(tmp_path):
-    # Create a temporary directory and CSV file
-    csv_file = tmp_path / "test.csv"
-    with csv_file.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=COLS)
-        writer.writeheader()
-        writer.writerow(
-            {
-                "id": "1",
-                "title": "Title 1",
-                "date": "2020-01-01",
-                "journal": "Journal 1",
-            }
-        )
-    # Test get_modeled_data
-    modeled_data = get_modeled_data(tmp_path)
-    assert len(modeled_data) == 1
-    assert modeled_data[0].id == "1"
-
-
-def test_get_referential_drugs(tmp_path):
-    # Create a temporary directory and CSV file
-    csv_file = tmp_path / "drugs.csv"
-    with csv_file.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["atccode", "drug"])
-        writer.writeheader()
-        writer.writerow({"atccode": "B01AC06", "drug": "Aspirin"})
-    # Test get_referential_drugs
-    drugs = get_referential_drugs(tmp_path)
-    assert len(drugs) == 1
-    assert drugs[0].drug == "Aspirin"

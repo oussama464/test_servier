@@ -1,16 +1,17 @@
-import pytest
+import csv
 import datetime
+import json
+
+import pytest
+
+from app.configs.config import SCHEMA_COL_NAMES
 from app.utils.utils import (
-    parse_date,
     clean_string,
     get_raw_csv,
     get_raw_json,
+    parse_date,
     save_to_json,
 )
-import json
-import csv
-import tempfile
-from app.configs.config import SCHEMA_COL_NAMES
 
 
 @pytest.mark.parametrize(

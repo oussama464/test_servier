@@ -1,18 +1,8 @@
-import pytest
-import tempfile
-import datetime
-import pathlib
-import json
 import csv
-from typing import Iterator
-from pydantic import ValidationError
-from app.configs.config import SCHEMA_COL_NAMES
-from app.main import get_modeled_data, get_referential_drugs, consolidate_data
-from pydantic import ValidationError
-from app.models.drugs import Drugs
-from app.models.pubmed_trials import PubTrial
-from app.models.referenced_drugs import ReferencedDrugs
+import json
 
+from app.configs.config import SCHEMA_COL_NAMES
+from app.main import consolidate_data, get_modeled_data, get_referential_drugs
 from app.utils.utils import save_to_json
 
 
