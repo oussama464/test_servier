@@ -1,5 +1,71 @@
 [
     {
+        "drug_name": "DIPHENHYDRAMINE",
+        "source_name": "clinical_trials",
+        "source_id": "NCT01967433",
+        "mention_date": "2020-01-01",
+        "journal": "Journal of emergency nursing",
+        "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
+        "source_file_type": "csv",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "pipeline_owner": "ouss@gmail.com"
+    },
+    {
+        "drug_name": "DIPHENHYDRAMINE",
+        "source_name": "clinical_trials",
+        "source_id": "NCT04189588",
+        "mention_date": "2020-01-01",
+        "journal": "Journal of emergency nursing",
+        "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
+        "source_file_type": "csv",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "pipeline_owner": "ouss@gmail.com"
+    },
+    {
+        "drug_name": "DIPHENHYDRAMINE",
+        "source_name": "clinical_trials",
+        "source_id": "NCT04237091",
+        "mention_date": "2020-01-01",
+        "journal": "Journal of emergency nursing",
+        "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
+        "source_file_type": "csv",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "pipeline_owner": "ouss@gmail.com"
+    },
+    {
+        "drug_name": "DIPHENHYDRAMINE",
+        "source_name": "pubmed",
+        "source_id": "1",
+        "mention_date": "2019-01-01",
+        "journal": "Journal of emergency nursing",
+        "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
+        "source_file_type": "csv",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "pipeline_owner": "ouss@gmail.com"
+    },
+    {
+        "drug_name": "DIPHENHYDRAMINE",
+        "source_name": "pubmed",
+        "source_id": "2",
+        "mention_date": "2019-01-01",
+        "journal": "Journal of emergency nursing",
+        "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
+        "source_file_type": "csv",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "pipeline_owner": "ouss@gmail.com"
+    },
+    {
+        "drug_name": "DIPHENHYDRAMINE",
+        "source_name": "pubmed",
+        "source_id": "3",
+        "mention_date": "2019-02-01",
+        "journal": "The Journal of pediatrics",
+        "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
+        "source_file_type": "csv",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
+        "pipeline_owner": "ouss@gmail.com"
+    },
+    {
         "drug_name": "TETRACYCLINE",
         "source_name": "pubmed",
         "source_id": "4",
@@ -7,7 +73,7 @@
         "journal": "Journal of food protection",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -18,7 +84,7 @@
         "journal": "American journal of veterinary research",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -29,7 +95,7 @@
         "journal": "Psychopharmacology",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -40,7 +106,7 @@
         "journal": "Psychopharmacology",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -51,7 +117,7 @@
         "journal": "The journal of maternal-fetal & neonatal medicine",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -62,7 +128,7 @@
         "journal": "Journal of emergency nursing",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -73,7 +139,7 @@
         "journal": "The journal of allergy and clinical immunology. In practice",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -84,7 +150,7 @@
         "journal": "The journal of allergy and clinical immunology. In practice",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -95,7 +161,7 @@
         "journal": "Journal of photochemistry and photobiology. B, Biology",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -106,7 +172,7 @@
         "journal": "The journal of maternal-fetal & neonatal medicine",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -117,7 +183,7 @@
         "journal": "Journal of back and musculoskeletal rehabilitation",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -128,7 +194,7 @@
         "journal": "The journal of maternal-fetal & neonatal medicine",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/pubmed.json",
         "source_file_type": "json",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     },
     {
@@ -139,7 +205,7 @@
         "journal": "Hpitaux Universitaires de Genve",
         "source_file_path": "/home/bobo/Desktop/test_servier/Python_test_de/data/landing/clinical_trials.csv",
         "source_file_type": "csv",
-        "ingestion_timestamp": "2024-11-02 13:31:40.737886",
+        "ingestion_timestamp": "2024-11-03 13:12:55.584996",
         "pipeline_owner": "ouss@gmail.com"
     }
 ]

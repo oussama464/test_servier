@@ -1,7 +1,7 @@
 from pydantic import BaseModel, AfterValidator, BeforeValidator
 from typing import Annotated
 import datetime
-from utils.utils import parse_date, clean_string
+from app.utils.utils import parse_date, clean_string
 
 
 Date = Annotated[datetime.date, BeforeValidator(parse_date)]

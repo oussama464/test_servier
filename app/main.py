@@ -1,9 +1,9 @@
 import datetime
-from configs.config import LANDING_DATA_DIR, REFERENTIAL_DRUGS_DIR, STAGING_DATA_DIR
-from utils.utils import save_to_json, list_files_in_folder, get_raw_data
-from models.pubmed_trials import PubTrial
-from models.drugs import Drugs
-from models.referenced_drugs import ReferencedDrugs
+from app.configs.config import LANDING_DATA_DIR, REFERENTIAL_DRUGS_DIR, STAGING_DATA_DIR
+from app.utils.utils import save_to_json, list_files_in_folder, get_raw_data
+from app.models.pubmed_trials import PubTrial
+from app.models.drugs import Drugs
+from app.models.referenced_drugs import ReferencedDrugs
 import pathlib
 from pydantic import ValidationError
 import csv
@@ -27,7 +27,7 @@ def get_referential_drugs(ref_dir: pathlib.Path) -> list[Drugs]:
     for file in list_files_in_folder(ref_dir):
         with open(file, mode="r", encoding="utf-8") as f:
             data = csv.DictReader(f)
-            next(data)
+            # next(data)
             for entry in data:
                 models.append(Drugs(**entry))
     return models
@@ -54,10 +54,10 @@ def consolidate_data(
     return output
 
 
-def main():
+def main() -> None:
     pubmed_trial_sources = get_modeled_data(LANDING_DATA_DIR)
     referential_drugs = get_referential_drugs(REFERENTIAL_DRUGS_DIR)
-    out_file_name = f"curated_{datetime.datetime.now}"
+    out_file_name = f"curated_{datetime.datetime.now()}"
     output_data = consolidate_data(pubmed_trial_sources, referential_drugs)
     save_to_json(STAGING_DATA_DIR, output_data, out_file_name)
 

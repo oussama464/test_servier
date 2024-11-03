@@ -5,10 +5,10 @@ import json
 import datetime
 from dateutil.parser import parse
 import re
-from configs.config import SCHEMA_COL_NAMES, SUPPORTED_FILE_TYPES
+from app.configs.config import SCHEMA_COL_NAMES, SUPPORTED_FILE_TYPES
 
 
-def list_files_in_folder(folder_path: pathlib.Path):
+def list_files_in_folder(folder_path: pathlib.Path) -> list[pathlib.Path]:
     return [file for file in folder_path.iterdir() if file.is_file()]
 
 
