@@ -1,3 +1,24 @@
+## running pre-commit
+
+```bash
+pip install pre-commit
+pre-commit install
+
+pre-commit --run
+
+pre-commit run --all-files -v
+```
+
+## packaging the code
+
+```bash
+pip install build
+
+python -m build --sdist --wheel .
+```
+
+## project tree
+
 ```bash
 .
 ├── app
