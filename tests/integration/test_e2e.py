@@ -1,46 +1,15 @@
-import csv
 import json
 
-from app.configs.config import SCHEMA_COL_NAMES
-from app.main import consolidate_data, get_modeled_data, get_referential_drugs
+from app.main import (
+    consolidate_data,
+    get_modeled_data,
+    get_referential_drugs,
+)
 from app.utils.utils import save_to_json
 
 
-def test_integration(tmp_path):
-    # Create temporary landing data directory
-    landing_dir = tmp_path / "landing"
-    landing_dir.mkdir()
-    # Create sample CSV file in landing data directory
-    csv_file = landing_dir / "pubmed.csv"
-    with csv_file.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=SCHEMA_COL_NAMES)
-        writer.writeheader()
-        writer.writerow(
-            {
-                "id": "1",
-                "title": "Study on Aspirin",
-                "date": "2020-01-01",
-                "journal": "Medical Journal",
-            }
-        )
-        writer.writerow(
-            {
-                "id": "2",
-                "title": "Study on Ibuprofen",
-                "date": "2020-02-01",
-                "journal": "Health Journal",
-            }
-        )
-    # Create temporary referential drugs directory
-    drugs_dir = tmp_path / "referential_drugs"
-    drugs_dir.mkdir()
-    # Create sample drugs CSV file
-    drugs_csv = drugs_dir / "drugs.csv"
-    with drugs_csv.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["atccode", "drug"])
-        writer.writeheader()
-        writer.writerow({"atccode": "B01AC06", "drug": "Aspirin"})
-        writer.writerow({"atccode": "M01AE01", "drug": "Ibuprofen"})
+def test_integration(setup_integration_test, tmp_path):
+    landing_dir, drugs_dir = setup_integration_test
     # Run the data processing pipeline
     pubmed_trial_sources = get_modeled_data(landing_dir)
     referential_drugs = get_referential_drugs(drugs_dir)

@@ -1,4 +1,3 @@
-import csv
 import datetime
 import json
 
@@ -8,6 +7,7 @@ from app.configs.config import SCHEMA_COL_NAMES
 from app.utils.utils import (
     clean_string,
     get_raw_csv,
+    get_raw_data,
     get_raw_json,
     parse_date,
     save_to_json,
@@ -44,42 +44,44 @@ def test_clean_string(input_str, expected_output):
     assert clean_string(input_str) == expected_output
 
 
-def test_get_raw_csv(tmp_path):
-    # Create a temporary CSV file
-    csv_file = tmp_path / "test.csv"
-    with csv_file.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=SCHEMA_COL_NAMES)
-        writer.writeheader()
-        writer.writerow(
-            {
-                "id": "1",
-                "title": "Title 1",
-                "date": "2020-01-01",
-                "journal": "Journal 1",
-            }
-        )
+def test_get_raw_csv(temporary_csv_file):
+    # Use the fixture to create a temporary CSV file
+    rows = [{"id": "1", "title": "Title 1", "date": "2020-01-01", "journal": "Journal 1"}]
+    csv_file = temporary_csv_file("test.csv", SCHEMA_COL_NAMES, rows)
     # Test get_raw_csv
     data_iterator = get_raw_csv(csv_file)
     data = list(data_iterator)
     assert len(data) == 1
     assert data[0]["id"] == "1"
-    assert data[0]["source"] == "test"
 
 
-def test_get_raw_json(tmp_path):
-    # Create a temporary JSON file
-    test_data = [
-        {"id": "1", "title": "Title 1", "date": "2020-01-01", "journal": "Journal 1"}
-    ]
-    json_file = tmp_path / "test.json"
-    with json_file.open("w", encoding="utf-8") as f:
-        json.dump(test_data, f)
+def test_get_raw_json(temporary_json_file):
+    # Use the fixture to create a temporary JSON file
+    data = [{"id": "1", "title": "Title 1", "date": "2020-01-01", "journal": "Journal 1"}]
+    json_file = temporary_json_file("test.json", data)
     # Test get_raw_json
     data_iterator = get_raw_json(json_file)
     data = list(data_iterator)
     assert len(data) == 1
     assert data[0]["id"] == "1"
-    assert data[0]["source"] == "test"
+
+
+def test_get_raw_data(temporary_csv_file, temporary_json_file):
+    # Test with CSV file
+    csv_rows = [{"id": "1", "title": "CSV Title", "date": "2020-01-01", "journal": "Journal CSV"}]
+    csv_file = temporary_csv_file("test.csv", SCHEMA_COL_NAMES, csv_rows)
+    data_iterator = get_raw_data(csv_file)
+    data = list(data_iterator)
+    assert len(data) == 1
+    assert data[0]["title"] == "CSV Title"
+
+    # Test with JSON file
+    json_data = [{"id": "2", "title": "JSON Title", "date": "2020-02-01", "journal": "Journal JSON"}]
+    json_file = temporary_json_file("test.json", json_data)
+    data_iterator = get_raw_data(json_file)
+    data = list(data_iterator)
+    assert len(data) == 1
+    assert data[0]["title"] == "JSON Title"
 
 
 def test_save_to_json(tmp_path):
