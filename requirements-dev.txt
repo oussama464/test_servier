@@ -1,5 +1,6 @@
-pydantic
 dateutils
-pytz
+pydantic
 pytest
 python-dateutil
+pytz
+build

@@ -4,11 +4,19 @@ import pathlib
 
 from pydantic import ValidationError
 
-from app.configs.config import LANDING_DATA_DIR, REFERENTIAL_DRUGS_DIR, STAGING_DATA_DIR
+from app.configs.config import (
+    LANDING_DATA_DIR,
+    REFERENTIAL_DRUGS_DIR,
+    STAGING_DATA_DIR,
+)
 from app.models.drugs import Drugs
 from app.models.pubmed_trials import PubTrial
 from app.models.referenced_drugs import ReferencedDrugs
-from app.utils.utils import get_raw_data, list_files_in_folder, save_to_json
+from app.utils.utils import (
+    get_raw_data,
+    list_files_in_folder,
+    save_to_json,
+)
 
 
 def get_modeled_data(data_dir: pathlib.Path) -> list[PubTrial]:
@@ -35,9 +43,7 @@ def get_referential_drugs(ref_dir: pathlib.Path) -> list[Drugs]:
     return models
 
 
-def consolidate_data(
-    pubmed_trial_sources: list[PubTrial], referential_drugs: list[Drugs]
-) -> list[dict[str, str]]:
+def consolidate_data(pubmed_trial_sources: list[PubTrial], referential_drugs: list[Drugs]) -> list[dict[str, str]]:
     output = []
     for ref_drug in referential_drugs:
         for pubmed_trial_source in pubmed_trial_sources:
