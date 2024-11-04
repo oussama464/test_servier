@@ -6,7 +6,12 @@ pre-commit install
 
 pre-commit run --all-files -v
 ```
-
+## Running tests
+```bash
+pytest -vv -s tests/
+or
+PYTHONPATH=. pytest -vv -s tests/
+```
 ## packaging the code
 
 ```bash
