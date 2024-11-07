@@ -1,6 +1,8 @@
 build
+click
 dateutils
 pydantic
 pytest
+pytest-cov
 python-dateutil
 pytz
