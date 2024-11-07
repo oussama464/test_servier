@@ -30,6 +30,10 @@ find = {exclude = ["tests*","testing*"]}
 [tool.setuptools.dynamic]
 version = { file = "version.txt" }
 
+[project.scripts]
+drug-reference-cli = "app.main:cli"
+
+
 [tool.pytest.ini_options]
 #markers = ["slow: marks tests as slow (deselect with '-m \"not slow\"')"]
 filterwarnings = [
@@ -46,7 +50,7 @@ exclude = ".venv"
 
 [tool.flake8]
 docstring-convention = "all"
-ignore = ["D107", "D212", "E501", "W503", "W605", "D203", "D100","D103","D104","D101"]
+ignore = ["D107", "D212", "E501", "W503", "W605", "D203", "D100","D103","D104","D101","D401"]
 exclude = ["venv"]
 max-line-length = 119
 

@@ -11,5 +11,5 @@ class ReferencedDrugs(BaseModel):
     journal: str
     source_file_path: str
     source_file_type: str
-    ingestion_timestamp: datetime.datetime = datetime.datetime.now()
-    pipeline_owner: str = "ouss@gmail.com"
+    pipeline_owner: str
+    ingestion_timestamp: str = datetime.datetime.now().isoformat()
