@@ -13,7 +13,7 @@ def test_integration(setup_integration_test, tmp_path):
     # Run the data processing pipeline
     pubmed_trial_sources = get_modeled_data(landing_dir)
     referential_drugs = get_referential_drugs(drugs_dir)
-    output_data = consolidate_data(pubmed_trial_sources, referential_drugs)
+    output_data = consolidate_data(pubmed_trial_sources, referential_drugs, pipeline_owner="ouss")
     # Save to JSON in a staging directory
     staging_dir = tmp_path / "staging"
     staging_dir.mkdir()

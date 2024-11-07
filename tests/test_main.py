@@ -27,7 +27,7 @@ def test_get_referential_drugs(tmp_path, temporary_csv_file):
 
 
 def test_consolidate_data(sample_pubmed_trial_sources, sample_referential_drugs):
-    output = consolidate_data(sample_pubmed_trial_sources, sample_referential_drugs)
+    output = consolidate_data(sample_pubmed_trial_sources, sample_referential_drugs, pipeline_owner="ouss")
     assert len(output) == 2
     drug_names = [item["drug_name"] for item in output]
     assert "Aspirin" in drug_names

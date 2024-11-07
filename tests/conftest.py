@@ -42,6 +42,7 @@ def sample_referenced_drugs_data():
         "journal": "Medical Journal",
         "source_file_path": "/path/to/file.csv",
         "source_file_type": "csv",
+        "pipeline_owner": "ouss",
     }
 
 
