@@ -23,7 +23,6 @@ python -m build --sdist --wheel .
 ## project tree
 
 ```bash
-.
 ├── app
 │   ├── configs
 │   │   ├── config.py
@@ -44,13 +43,20 @@ python -m build --sdist --wheel .
 │   │   ├── pubmed.csv
 │   │   └── pubmed.json
 │   └── staging
-│       └── curated_2024-11-03 13:12:55.587911
+│       ├── curated_2024-11-07 23:15:23.353023.json
+│       └── curated_2024-11-07 23:45:59.475987.json
+├── Makefile
+├── pyproject.toml
+├── README.md
 ├── referential_drugs
 │   └── drugs.csv
 ├── requirements-dev.txt
-└── tests
-    ├── integration
-    │   └── test_e2e.py
-    ├── test_main.py
-    ├── test_models.py
-    └── test_utils.py
+├── run.sh
+├── tests
+│   ├── conftest.py
+│   ├── integration
+│   │   └── test_e2e.py
+│   ├── test_main.py
+│   ├── test_models.py
+│   └── test_utils.py
+└── version.txt
